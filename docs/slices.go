@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func main(){
+func slices(){
 	var fruitList = []string{"apple", "tomato", "peach"}
 	fmt.Printf("%T\n", fruitList) // []string
 
