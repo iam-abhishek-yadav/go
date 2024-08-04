@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-const url = "https://api.github.com/repos/iam-abhishek-yadav/tasks"
+const weburl = "https://api.github.com/repos/iam-abhishek-yadav/tasks"
 
 // Define a struct to match the JSON structure
 type Repo struct {
@@ -21,7 +21,7 @@ type Repo struct {
 }
 
 func web_requests() {
-	response, err := http.Get(url)
+	response, err := http.Get(weburl)
 	checkNilError(err)
 	defer response.Body.Close() // Closing the connection after reading the response
 
